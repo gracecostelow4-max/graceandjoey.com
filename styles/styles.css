@@ -1,0 +1,368 @@
+@font-face {
+    font-family: 'beyondperfection';
+    src: url('../fonts/beyondperfection.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* ---------- GLOBAL ---------- */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  body {
+    font-family: 'Cormorant Garamond', serif;
+    color: #613a24;
+  }
+  
+  /* ---------- NAV ---------- */
+  nav {
+    background-color: rgba(252, 250, 250, 0.95);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid white;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: auto;
+    background: transparent !important;
+    display: block;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .nav-links a {
+    color: #613a24;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ad6c82;
+  }
+  
+  /* Hamburger (hidden by default) */
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* ---------- HERO ---------- */
+  .hero {
+    background-image: url('../images/flowerhero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-text-box {
+    background-color: white;
+    padding: 40px 80px;
+    text-align: center;
+    max-width: 150%;
+  }
+  
+  .wedding h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: 400;
+  }
+  
+  .herohome {
+    font-family: 'beyondperfection';
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+  .herodate {
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  /* ---------- SECTIONS ---------- */
+  .ovalsection {
+    padding: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .oval img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 60% / 60%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #613a24;
+    
+  }
+  
+  .textoval h1 {
+    text-align: left;
+    line-height: 1.8;
+    font-family: 'beyondperfection';
+    font-size: 18px;
+    max-width: 700px;
+  }
+  
+  .textoval p {
+    background-color: #fcfafa;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2rem;
+    line-height: 1.7;
+  }
+  
+  .dresstitle {
+    text-align: center;
+    padding: 15px;
+    font-family: 'beyondperfection';
+    font-size: 15px;
+  }
+  
+  .dresssection {
+    background-color: #fcfafa;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2rem;
+    line-height: 1.7;
+  }
+  
+  .dresssection h1 {
+    text-align: left;
+    line-height: 1.8;
+    font-family: 'beyondperfection';
+    font-size: 18px;
+    max-width: 700px;
+  }
+  
+  /* Dress code image fix */
+  .dresscodeimg img {
+    display: block;
+    margin: 0 auto;
+    max-width: 30%;
+    height: auto;
+    padding-bottom: 15p;
+  }
+  
+  .textsection {
+    height: 60vh;
+  }
+  
+  .how p {
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 750px;
+    line-height: 1.7;
+    padding-bottom: 12px;
+  }
+  
+  .ladies h2 {
+    text-align: center;
+    font-style: italic;
+  }
+  
+  .colors h2 {
+    font-style: italic;
+  }
+  
+  .ovalsection h1 {
+    font-family: 'beyondperfection';
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .regsection {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2rem;
+    line-height: 1.7;
+  }
+  
+  .regtitle {
+    font-family: 'beyondperfection';
+    font-size: 17px;
+  }
+  
+  /* ---------- SQUARE IMAGE ---------- */
+  .imghands img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .registry-button {
+    display: inline-block;
+    padding: 0px 24px;
+    margin-top: 1rem;
+    background-color: #fcfafa;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    font-size: 25px;
+    color: #613a24;
+  }
+  
+  /* ---------- RESPONSIVE ---------- */
+  
+  /* Tablet & below */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background: #fcfafa;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px 0;
+      border-top: 1px solid #eee;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .hero {
+      height: 70vh;
+      padding: 0 20px;
+    }
+
+      /* Dress code image fix */
+  .dresscodeimg img {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    height: auto;
+    padding-bottom: 15p;
+  }
+
+   
+  .dresstitle {
+    text-align: center;
+    padding: 20px;
+    font-family: 'beyondperfection';
+    font-size: 10px;
+  }
+  
+    .hero-text-box {
+      padding: 30px 20px;
+    }
+  
+    .wedding h1 {
+      font-size: 28px;
+    }
+  
+    .herohome {
+      font-size: 24px;
+    }
+  
+    .herodate {
+      font-size: 14px;
+    }
+  
+    .oval img {
+      width: 200px;
+      height: 280px;
+    }
+  
+    .imghands img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .textoval p,
+    .dresssection,
+    .how p,
+    .regsection {
+      font-size: 20px;
+      line-height: 1.8;
+    }
+  
+    .dresstitle,
+    .dresssection h1 {
+      font-size: 15px;
+      padding: 25px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 480px) {
+    .hero {
+      height: 60vh;
+    }
+  
+    .hero-text-box {
+      padding: 20px;
+    }
+  
+    .wedding h1 {
+      font-size: 22px;
+    }
+  
+    .herohome {
+      font-size: 20px;
+    }
+  
+    .herodate {
+      font-size: 13px;
+    }
+  
+    .textoval p,
+    .dresssection,
+    .how p,
+    .regsection {
+      padding: 1.5rem;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+  
+    .dresstitle,
+    .dresssection h1 {
+      font-size: 15px;
+      line-height: 1.2;
+    }
+  
+    .registry-button {
+      font-size: 20px;
+      padding: 0 16px;
+    }
+  }
+  
